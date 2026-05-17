@@ -1,4 +1,4 @@
-@extends('app')
+@extends('AccessControl::layout')
 
 @section('content')
     <div class="flex justify-between items-center mb-8">

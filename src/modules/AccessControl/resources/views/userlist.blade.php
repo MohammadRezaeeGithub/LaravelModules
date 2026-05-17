@@ -1,4 +1,4 @@
-@extends('app')
+@extends('AccessControl::layout')
 
 @section('content')
 
@@ -54,8 +54,11 @@
                                     </tr>
                                 @endforelse
                             </tbody>
-
                         </table>
+
+                        @role('admin')
+                        <p>this is admin</p>
+                        @endrole
                     </div>
                 </div>
 @endsection

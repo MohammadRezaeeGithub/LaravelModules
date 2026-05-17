@@ -13,7 +13,7 @@ class UserController extends Controller
 
         $users = User::with('roles')->get();
 
-        return view('AccessControl.userlist', compact('users'));
+        return view('AccessControl::userlist', compact('users'));
     }
 
     public function edit(User $user){
@@ -21,7 +21,7 @@ class UserController extends Controller
         $roles = Role::all();
         $permissions = Permission::all();
 
-        return view('AccessControl.useredit', compact('user','roles','permissions'));
+        return view('AccessControl::useredit', compact('user','roles','permissions'));
 
     }
 

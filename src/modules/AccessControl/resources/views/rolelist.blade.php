@@ -1,4 +1,4 @@
-@extends('app')
+@extends('AccessControl::layout')
 @section('content')
 <div class="space-y-6">
 
@@ -9,7 +9,7 @@
         </div>
 
         <div class="p-6">
-            <form method="POST" action="">
+            <form method="POST" action="{{route('roles.store')}}">
                 @csrf
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
@@ -58,11 +58,11 @@
                     @forelse ($roles as $role)
                         <tr class="hover:bg-gray-50 transition">
                             <td class="px-6 py-4 text-gray-800">
-                                {{ $role->name }} 
+                                {{ $role->name }}
                             </td>
 
                             <td class="px-6 py-4">
-                                <a href=""
+                                <a href="{{route('roles.edit',$role->id)}}"
                                    class="text-blue-600 hover:text-blue-800 font-medium">
                                     Edit
                                 </a>
