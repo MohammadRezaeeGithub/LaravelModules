@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Modules\AccessControl\Database\seeders\AccessControlSeeder;
+use App\Modules\Basket\Database\seeders\BasketSeeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,6 +22,7 @@ class DatabaseSeeder extends Seeder
                 ->create();
             $this->call([
                 AccessControlSeeder::class,
+                BasketSeeder::class,
             ]);
     }
 }

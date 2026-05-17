@@ -4,7 +4,7 @@
 
 namespace App\Modules\AccessControl\Providers;
 
-use App\Modules\AccessControl\Http\Midlleware\RoleMiddleware;
+use App\Modules\AccessControl\Http\Middleware\RoleMiddleware;
 use App\Modules\AccessControl\Models\Permission;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Blade;

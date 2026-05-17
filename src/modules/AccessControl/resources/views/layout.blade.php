@@ -6,13 +6,13 @@
             <!-- RIGHT: Action Panel -->
                 <div class="rounded-xl p-6">
                     <a href="{{route('users.index')}}"
-                    class="block w-full text-center bg-gray-500 text-amber-100  py-5 rounded-lg text-sm font-medium
-                             hover:bg-gray-800 hover:text-amber-50 transition mb-2">
+                    class="block w-full text-center bg-gray-50 text-gray-700   py-5 rounded-lg text-sm font-medium
+                             hover:bg-gray-300 hover:text-gray-50 transition mb-2 border border-gray-300">
                         User List
                     </a>
                     <a href="{{route('roles.index')}}"
-                    class="block w-full text-center bg-gray-500 text-amber-100  py-5 rounded-lg text-sm font-medium
-                             hover:bg-gray-800 hover:text-amber-50 transition mb-2">
+                    class="block w-full text-center bg-gray-50 text-gray-700 py-5 rounded-lg text-sm font-medium
+                             hover:bg-gray-300 hover:text-gray-50 transition mb-2 border border-gray-300">
                         Role list
                     </a>
                 </div>
