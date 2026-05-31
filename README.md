@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧩 Laravel Modules
+# Laravel Modules
 
 **A modular Laravel application built from scratch — demonstrating clean architecture, Docker-based infrastructure, and custom Role-Based Access Control without any third-party packages.**
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📌 About The Project
+##  About The Project
 
 This project was built as a deep-dive into **software engineering principles** and **web application design** using Laravel — fully containerized with Docker.
 
@@ -24,7 +24,7 @@ The goal was to implement a modular monolith architecture **from scratch**, with
 
 ---
 
-## ✨ Features
+## Features
 
 - ✅ **Modular Architecture** — each feature is a self-contained module with its own routes, models, migrations, views, and service providers
 - ✅ **Custom RBAC** — roles and permissions system built from scratch using Laravel Gates and middleware
@@ -34,7 +34,7 @@ The goal was to implement a modular monolith architecture **from scratch**, with
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 The application follows a **Modular Monolith** pattern. Each module lives under `src/modules/` and is completely self-sufficient:
 
@@ -99,9 +99,9 @@ docker-compose.yaml       # Orchestration: backend + server + db + composer
 
 ---
 
-## 🧩 Modules
+##  Modules
 
-### 🔐 AccessControl
+###  AccessControl
 
 Handles everything related to **users, roles, and permissions** — all implemented without any external RBAC package.
 
@@ -117,7 +117,7 @@ Handles everything related to **users, roles, and permissions** — all implemen
 - Assign roles to users
 - Permission-based authorization via Gates
 
-### 🛒 Basket
+###  Basket
 
 A shopping basket module with a clean **storage abstraction layer**.
 
@@ -224,14 +224,9 @@ This project is primarily a personal learning project, but contributions, sugges
 
 ---
 
-## 📄 License
+##  License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-<div align="center">
-
-Built with ❤️ to learn and practice Laravel, Docker, and software architecture.
-
-</div>
