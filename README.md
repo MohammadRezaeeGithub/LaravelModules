@@ -142,7 +142,7 @@ Services/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -185,25 +185,7 @@ http://localhost:8000
 
 ---
 
-## 📸 Screenshots
-
-### Access Control — User List
-![User List](/.github/screenshots/user-list.png)
-
-### Access Control — Role Management
-![Role Management](/.github/screenshots/role-management.png)
-
-### Basket — Product Listing
-![Products](/.github/screenshots/products.png)
-
-### Basket — Checkout Summary
-![Basket](/.github/screenshots/basket.png)
-
-> 📁 To add screenshots: create a `.github/screenshots/` folder in the repo root and upload your images there.
-
----
-
-## 🛣 Roadmap
+## Roadmap
 
 - [x] AccessControl module (roles & permissions)
 - [x] Basket module with storage abstraction
@@ -212,7 +194,7 @@ http://localhost:8000
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This project is primarily a personal learning project, but contributions, suggestions, and feedback are always welcome.
 
