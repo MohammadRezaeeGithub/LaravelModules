@@ -10,7 +10,7 @@
 [![Nginx](https://img.shields.io/badge/Nginx-1.x-009639?style=flat-square&logo=nginx&logoColor=white)](https://nginx.org)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com)
 
-[Features](#-features) · [Architecture](#-architecture) · [Modules](#-modules) · [Getting Started](#-getting-started) · [Screenshots](#-screenshots)
+[Features](#-features) · [Architecture](#-architecture) · [Modules](#-modules) · [Getting Started](#-getting-started) 
 
 </div>
 
