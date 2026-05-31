@@ -36,4 +36,12 @@ class BasketController extends Controller
         $items = $this->basket->all();
         return view('BasketViews::basket',compact('items'));
     }
+
+    //in basket page,if user wants to modify the quantity of the product,the request comes here
+    public function update(Product $product,Request $request)
+    {
+        $this->basket->update($product,$request->quantity);
+
+        return back();
+    }
 }

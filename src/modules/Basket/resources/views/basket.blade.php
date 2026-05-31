@@ -15,7 +15,7 @@
 
 
             <!-- LEFT: Table -->
-            <div class="md:col-span-2">
+            <div class="md:col-span-2 p-6">
                     <div class="overflow-x-auto bg-white shadow rounded-lg">
                         <table class="min-w-full divide-y divide-gray-200">
                             <thead>

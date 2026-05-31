@@ -40,6 +40,8 @@ class Basket
             throw new QuantityExceededException();
         }
 
+        //when user choose the 0 quantity in the basket page,it will remove form the basket with this code.
+        //it will unset
         if (!$quantity) {
             return $this->storage->unset($product->id);
         }
