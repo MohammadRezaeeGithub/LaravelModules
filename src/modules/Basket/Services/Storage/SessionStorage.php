@@ -33,6 +33,8 @@ class SessionStorage implements StorageInterface, Countable
 
     public function all()
     {
+        //if the bucket does not exist, it returns null and we get error when we want to show basket's quantity in the nowbar
+        //so when it dose not exist we return  an empty array, there for the count method can return zero
         return session()->get($this->bucket) ?? [];
     }
 

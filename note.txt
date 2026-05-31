@@ -1,1 +1,5 @@
 php artisan make:migration create_roles_table --path=modules/AccessControl/migrations
+docker compose up -d --build  
+docker compose down -v   
+docker compose exec backend php artisan migrate:fresh --seed --force    
+docker compose exec backend composer dump-autoload -o    

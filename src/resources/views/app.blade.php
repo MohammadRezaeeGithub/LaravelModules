@@ -22,18 +22,26 @@
                         </div>
                     </div>
 
-                    <p class=" cursor-pointer ">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="w-6 h-6">
-                        <path stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835L5.76 7.5m0 0L7.5 15h9.75m-11.49-7.5h13.74c.414 0 .707.403.58.798l-1.632 5.438a.75.75 0 01-.72.514H7.5m0 0L5.106 5.165M7.5 15a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm9 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
-                        </svg>
-                    </p>
+                    <a href="{{route('basket.index')}}">
+                        <p class=" relative cursor-pointer ">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6">
+                            <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835L5.76 7.5m0 0L7.5 15h9.75m-11.49-7.5h13.74c.414 0 .707.403.58.798l-1.632 5.438a.75.75 0 01-.72.514H7.5m0 0L5.106 5.165M7.5 15a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm9 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+                            </svg>
+
+                                <!-- Badge -->
+                            <span
+                                class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                                {{app(App\Modules\Basket\Services\Basket\Basket::class)->itemCount()}}
+                            </span>
+                        </p>
+                    </a>
         </div>
     </div>
 

@@ -52,7 +52,7 @@
                                    hover:bg-[#7B4B4B]
                                    hover:text-white transition">
 
-                            Add to cart
+                            <a href="{{route('basket.add',$product->id)}}">Add to cart</a>
 
                         </button>
 

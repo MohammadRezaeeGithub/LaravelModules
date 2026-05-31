@@ -13,4 +13,10 @@ class Product extends Model
     {
         return \App\Modules\Basket\Database\factories\ProductFactory::new();
     }
+
+    //we check if there is enough qunatity of productu in the stock
+    public function hasStock(int $quantity)
+    {
+        return $this->stock >= $quantity;
+    }
 }
