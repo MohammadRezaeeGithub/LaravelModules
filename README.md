@@ -107,7 +107,7 @@ Handles everything related to **users, roles, and permissions** — all implemen
 
 **How it works:**
 - Roles and permissions are stored in the database
-- On boot, the `AccessControlServiceProvider` registers all permissions as **Laravel Gates**, enabling `$user->can('permission-name')` checks anywhere in the app
+- On boot, the AccessControlServiceProvider first verifies the permissions table exists (to avoid errors before migrations run), then registers all permissions as Laravel Gates — enabling $user->can('permission-name') checks and @role Blade directives anywhere in the app.
 - A custom `RoleMiddleware` protects routes by role
 - Blade directives like `@role('admin')` are registered for easy view-level access control
 
